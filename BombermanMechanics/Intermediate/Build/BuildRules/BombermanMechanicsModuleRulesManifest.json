@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\lnesmith\\Documents\\GitHub\\GCS_Unreal\\Bomberman-mechanics\\BombermanMechanics\\Source\\BombermanMechanics\\BombermanMechanics.Build.cs",
+		"C:\\Users\\lnesmith\\Documents\\GitHub\\GCS_Unreal\\Bomberman-mechanics\\BombermanMechanics\\Source\\BombermanMechanics.Target.cs",
+		"C:\\Users\\lnesmith\\Documents\\GitHub\\GCS_Unreal\\Bomberman-mechanics\\BombermanMechanics\\Source\\BombermanMechanicsEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

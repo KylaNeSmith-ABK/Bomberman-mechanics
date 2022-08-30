@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BombermanMechanics",
+			"Path": "C:\\Users\\lnesmith\\Documents\\GitHub\\GCS_Unreal\\Bomberman-mechanics\\BombermanMechanics\\Source\\BombermanMechanics.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BombermanMechanicsEditor",
+			"Path": "C:\\Users\\lnesmith\\Documents\\GitHub\\GCS_Unreal\\Bomberman-mechanics\\BombermanMechanics\\Source\\BombermanMechanicsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

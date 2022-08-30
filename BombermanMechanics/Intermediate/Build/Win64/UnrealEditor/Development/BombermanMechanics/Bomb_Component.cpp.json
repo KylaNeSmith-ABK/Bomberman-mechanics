@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\source\\bombermanmechanics\\bomb_component.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\bombermanmechanicseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\development\\bombermanmechanics\\definitions.bombermanmechanics.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\source\\bombermanmechanics\\bomb_component.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\inc\\bombermanmechanics\\bomb_component.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\spherecomponent.generated.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\source\\bombermanmechanics\\destructible_component.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\inc\\bombermanmechanics\\destructible_component.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
