@@ -16,19 +16,22 @@ public:
 	// Sets default values for this component's properties
 	UDestructible_Component();
 
+private:
+	AActor* Owner_ = nullptr;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	FVector StartLocation = FVector::ZeroVector;
+	FVector StartLocation_ = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere)
-	FVector EndLocationOffset = FVector::ZeroVector;
+	FVector EndLocationOffset_ = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere)
-	float TimeToMove = 2.0f;
+	float TimeToMove_ = 2.0f;
 
-	float CurrentTime = 0.0f;
+	float CurrentTime_ = 0.0f;
 
 public:	
 	// Called every frame

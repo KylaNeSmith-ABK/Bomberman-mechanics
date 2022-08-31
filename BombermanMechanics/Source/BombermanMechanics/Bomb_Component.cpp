@@ -14,11 +14,11 @@ UBomb_Component::UBomb_Component()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	Owner = GetOwner();
+	Owner_ = GetOwner();
 
-	if (Owner)
+	if (Owner_)
 	{
-		USceneComponent* root = Owner->GetRootComponent();
+		USceneComponent* root = Owner_->GetRootComponent();
 
 		if (!ExplosionAOESphere_ && root)
 		{
@@ -37,9 +37,9 @@ void UBomb_Component::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (Owner)
+	if (Owner_)
 	{
-		Place(Owner->GetActorLocation());
+		Place(Owner_->GetActorLocation());
 	}
 	
 	// ...
@@ -49,27 +49,33 @@ void UBomb_Component::BeginPlay()
 
 void UBomb_Component::OnExplode()
 {
-	TArray<AActor*> overlappingActors;
-	ExplosionAOESphere_->GetOverlappingActors(overlappingActors);
-
-	for (AActor* actor : overlappingActors)
+	if (ExplosionAOESphere_)
 	{
+		TArray<AActor*> overlappingActors;
+		ExplosionAOESphere_->GetOverlappingActors(overlappingActors);
 
-		UDestructible_Component* destructComp = actor->FindComponentByClass<UDestructible_Component>();
-		if (destructComp)
+		for (AActor* actor : overlappingActors)
 		{
-			destructComp->DestroyViaBomb();
+
+			UDestructible_Component* destructComp = actor->FindComponentByClass<UDestructible_Component>();
+			if (destructComp)
+			{
+				destructComp->DestroyViaBomb();
+			}
+		}
+
+		UWorld* world = GetWorld();
+
+		if (world)
+		{
+			world->GetTimerManager().ClearTimer(DelayTimerHandle_);
+		}
+
+		if (Owner_)
+		{
+			Owner_->Destroy();
 		}
 	}
-
-	UWorld* world = GetWorld();
-
-	if (world)
-	{
-		world->GetTimerManager().ClearTimer(DelayTimerHandle_);
-	}
-
-	Owner->Destroy();
 }
 
 // Called every frame

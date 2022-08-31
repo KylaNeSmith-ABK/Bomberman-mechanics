@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\inc\\bombermanmechanics\\destructible_component.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\bombermanmechanicseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\development\\bombermanmechanics\\definitions.bombermanmechanics.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\source\\bombermanmechanics\\destructible_component.h",
+            "c:\\users\\lnesmith\\documents\\github\\gcs_unreal\\bomberman-mechanics\\bombermanmechanics\\intermediate\\build\\win64\\unrealeditor\\inc\\bombermanmechanics\\destructible_component.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

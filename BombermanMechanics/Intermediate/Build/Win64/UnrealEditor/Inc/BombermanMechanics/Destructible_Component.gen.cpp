@@ -65,13 +65,13 @@ void EmptyLinkFunctionForGeneratedCodeDestructible_Component() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_EndLocationOffset_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EndLocationOffset__MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_EndLocationOffset;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_EndLocationOffset_;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_TimeToMove_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TimeToMove__MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_TimeToMove;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_TimeToMove_;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -92,22 +92,22 @@ void EmptyLinkFunctionForGeneratedCodeDestructible_Component() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset__MetaData[] = {
 		{ "Category", "Destructible_Component" },
 		{ "ModuleRelativePath", "Destructible_Component.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset = { "EndLocationOffset", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDestructible_Component, EndLocationOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset_MetaData)) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset_ = { "EndLocationOffset_", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDestructible_Component, EndLocationOffset_), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset__MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset__MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove__MetaData[] = {
 		{ "Category", "Destructible_Component" },
 		{ "ModuleRelativePath", "Destructible_Component.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove = { "TimeToMove", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDestructible_Component, TimeToMove), METADATA_PARAMS(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove_ = { "TimeToMove_", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UDestructible_Component, TimeToMove_), METADATA_PARAMS(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove__MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove__MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDestructible_Component_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDestructible_Component_Statics::NewProp_EndLocationOffset_,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDestructible_Component_Statics::NewProp_TimeToMove_,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UDestructible_Component_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UDestructible_Component>::IsAbstract,
@@ -145,9 +145,9 @@ void EmptyLinkFunctionForGeneratedCodeDestructible_Component() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Destructible_Component_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UDestructible_Component, UDestructible_Component::StaticClass, TEXT("UDestructible_Component"), &Z_Registration_Info_UClass_UDestructible_Component, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDestructible_Component), 108648001U) },
+		{ Z_Construct_UClass_UDestructible_Component, UDestructible_Component::StaticClass, TEXT("UDestructible_Component"), &Z_Registration_Info_UClass_UDestructible_Component, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDestructible_Component), 909373165U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Destructible_Component_h_2855231481(TEXT("/Script/BombermanMechanics"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Destructible_Component_h_3718139501(TEXT("/Script/BombermanMechanics"),
 		Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Destructible_Component_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Destructible_Component_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -10,6 +10,7 @@ UDestructible_Component::UDestructible_Component()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
+	Owner_ = GetOwner();
 	// ...
 }
 
@@ -19,14 +20,22 @@ void UDestructible_Component::BeginPlay()
 {
 	Super::BeginPlay();
 
-	StartLocation = GetOwner()->GetActorLocation();
+	if (Owner_)
+	{
+		StartLocation_ = Owner_->GetActorLocation();
+	}
+	
 	// ...
 	
 }
 
 void UDestructible_Component::DestroyViaBomb()
 {
-	GetOwner()->Destroy();
+	if (Owner_)
+	{
+		Owner_->Destroy();
+	}
+	
 }
 
 
@@ -35,12 +44,16 @@ void UDestructible_Component::TickComponent(float DeltaTime, ELevelTick TickType
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
-	CurrentTime += DeltaTime;
+	CurrentTime_ += DeltaTime;
 
-	const float TimeRatio = FMath::Clamp(CurrentTime / TimeToMove, 0.0f, 1.0f);
-	FVector currentLocation = GetOwner()->GetActorLocation();
-	FVector nextLocation = FMath::Lerp(StartLocation, StartLocation + EndLocationOffset, TimeRatio);
-	GetOwner()->SetActorLocation(nextLocation);
+	if (Owner_)
+	{
+		const float timeRatio = FMath::Clamp(CurrentTime_ / TimeToMove_, 0.0f, 1.0f);
+		FVector currentLocation = Owner_->GetActorLocation();
+		FVector nextLocation = FMath::Lerp(StartLocation_, StartLocation_ + EndLocationOffset_, timeRatio);
+		Owner_->SetActorLocation(nextLocation);
+	}
+	
 
 	// ...
 }

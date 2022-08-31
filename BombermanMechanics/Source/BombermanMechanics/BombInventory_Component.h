@@ -16,12 +16,21 @@ public:
 	// Sets default values for this component's properties
 	UBombInventory_Component();
 
+private:
+	AActor* Owner_ = nullptr;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere)
-	bool bHasBomb = false;
+	UClass* BombSpawn_ = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	bool bHasBomb_ = false;
+
+	UFUNCTION()
+	void DropBomb();
 
 public:	
 	// Called every frame

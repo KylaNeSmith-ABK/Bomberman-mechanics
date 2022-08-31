@@ -1,25 +1,26 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\lnesmith\AppData\Local\UnrealBuildTool\Log.txt
-  Invalidating makefile for BombermanMechanicsEditor (working set of source files changed)
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics).
   Parsing headers for BombermanMechanicsEditor
     Running UnrealHeaderTool "C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\BombermanMechanics.uproject" "C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\Intermediate\Build\Win64\BombermanMechanicsEditor\Development\BombermanMechanicsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\lnesmith\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for BombermanMechanicsEditor in 1,638996 seconds
+  Reflection code generated for BombermanMechanicsEditor in 2,1393116 seconds
   Building BombermanMechanicsEditor...
   Using Visual Studio 2022 14.33.31629 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from BombermanMechanics unity file: BombermanMechanics.cpp, BombermanMechanicsCharacter.cpp, BombermanMechanicsGameMode.cpp, BombInventory_Component.cpp, Bomb_Component.cpp, Destructible_Component.cpp
   Determining max actions to execute in parallel (14 physical cores, 20 logical cores)
     Executing up to 14 processes, one per physical core
-    Requested 1,5 GB free memory per action, 15,21 GB available: limiting max parallel actions to 10
-  Building 8 actions with 8 processes...
-  [1/8] Compile BombermanMechanics.init.gen.cpp
-  [2/8] Compile BombInventory_Component.gen.cpp
-  [3/8] Compile BombInventory_Component.cpp
-  [4/8] Compile Bomb_Component.gen.cpp
-  [5/8] Compile Bomb_Component.cpp
-  [6/8] Link UnrealEditor-BombermanMechanics.lib
+    Requested 1,5 GB free memory per action, 10,46 GB available: limiting max parallel actions to 6
+  Building 10 actions with 6 processes...
+  [1/10] Compile BombermanMechanics.init.gen.cpp
+  [2/10] Compile BombInventory_Component.cpp
+  [3/10] Compile BombInventory_Component.gen.cpp
+  [4/10] Compile Destructible_Component.gen.cpp
+  [5/10] Compile Bomb_Component.gen.cpp
+  [6/10] Compile Destructible_Component.cpp
+  [7/10] Compile Bomb_Component.cpp
+  [8/10] Link UnrealEditor-BombermanMechanics.lib
      Creating library C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\Intermediate\Build\Win64\UnrealEditor\Development\BombermanMechanics\UnrealEditor-BombermanMechanics.lib and object C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\Intermediate\Build\Win64\UnrealEditor\Development\BombermanMechanics\UnrealEditor-BombermanMechanics.exp
-  [7/8] Link UnrealEditor-BombermanMechanics.dll
+  [9/10] Link UnrealEditor-BombermanMechanics.dll
      Creating library C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\Intermediate\Build\Win64\UnrealEditor\Development\BombermanMechanics\UnrealEditor-BombermanMechanics.suppressed.lib and object C:\Users\lnesmith\Documents\GitHub\GCS_Unreal\Bomberman-mechanics\BombermanMechanics\Intermediate\Build\Win64\UnrealEditor\Development\BombermanMechanics\UnrealEditor-BombermanMechanics.suppressed.exp
-  [8/8] WriteMetadata BombermanMechanicsEditor.target
-  Total time in Parallel executor: 2,22 seconds
-  Total execution time: 5,12 seconds
+  [10/10] WriteMetadata BombermanMechanicsEditor.target
+  Total time in Parallel executor: 8,08 seconds
+  Total execution time: 10,82 seconds

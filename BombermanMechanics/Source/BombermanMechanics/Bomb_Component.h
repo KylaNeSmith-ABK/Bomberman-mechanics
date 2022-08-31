@@ -19,7 +19,7 @@ public:
 	UBomb_Component();
 
 private:
-	AActor* Owner = nullptr;
+	AActor* Owner_ = nullptr;
 
 protected:
 	// Called when the game starts
