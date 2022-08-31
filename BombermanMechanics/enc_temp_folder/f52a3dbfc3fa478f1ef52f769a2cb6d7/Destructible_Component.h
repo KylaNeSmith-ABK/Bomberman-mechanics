@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "BombInventory_Component.generated.h"
+#include "Destructible_Component.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class BOMBERMANMECHANICS_API UBombInventory_Component : public UActorComponent
+class BOMBERMANMECHANICS_API UDestructible_Component : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UBombInventory_Component();
+	UDestructible_Component();
 
 private:
 	AActor* Owner_ = nullptr;
@@ -23,18 +23,20 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere)
-	AActor* BombSpawn_ = nullptr;
+	FVector StartLocation_ = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere)
-	bool bHasBomb_ = false;
+	FVector EndLocationOffset_ = FVector::ZeroVector;
 
-	UFUNCTION()
-	void DropBomb();
+	UPROPERTY(EditAnywhere)
+	float TimeToMove_ = 2.0f;
+
+	float CurrentTime_ = 0.0f;
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
+	UFUNCTION()
+	void DestroyViaBomb();
 };

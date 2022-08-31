@@ -66,10 +66,6 @@ void EmptyLinkFunctionForGeneratedCodeBomb_Component() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ExplosionRadius__MetaData[];
-#endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_ExplosionRadius_;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ExplosionAOESphere__MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_ExplosionAOESphere_;
@@ -101,17 +97,12 @@ void EmptyLinkFunctionForGeneratedCodeBomb_Component() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionRadius__MetaData[] = {
-		{ "Category", "Bomb_Component" },
-		{ "ModuleRelativePath", "Bomb_Component.h" },
-	};
-#endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionRadius_ = { "ExplosionRadius_", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBomb_Component, ExplosionRadius_), METADATA_PARAMS(Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionRadius__MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionRadius__MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionAOESphere__MetaData[] = {
 		{ "Category", "Bomb_Component" },
+		{ "Comment", "/*UPROPERTY(EditAnywhere)\n\x09""float ExplosionRadius_ = 250.0f;*/" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Bomb_Component.h" },
+		{ "ToolTip", "UPROPERTY(EditAnywhere)\n       float ExplosionRadius_ = 250.0f;" },
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionAOESphere_ = { "ExplosionAOESphere_", nullptr, (EPropertyFlags)0x0020080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBomb_Component, ExplosionAOESphere_), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionAOESphere__MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionAOESphere__MetaData)) };
@@ -129,7 +120,6 @@ void EmptyLinkFunctionForGeneratedCodeBomb_Component() {}
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UBomb_Component_Statics::NewProp_DelayTimerHandle_ = { "DelayTimerHandle_", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UBomb_Component, DelayTimerHandle_), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_UBomb_Component_Statics::NewProp_DelayTimerHandle__MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UBomb_Component_Statics::NewProp_DelayTimerHandle__MetaData)) }; // 589591453
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBomb_Component_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionRadius_,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionAOESphere_,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBomb_Component_Statics::NewProp_ExplosionDelayTime_,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBomb_Component_Statics::NewProp_DelayTimerHandle_,
@@ -170,9 +160,9 @@ void EmptyLinkFunctionForGeneratedCodeBomb_Component() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Bomb_Component_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBomb_Component, UBomb_Component::StaticClass, TEXT("UBomb_Component"), &Z_Registration_Info_UClass_UBomb_Component, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBomb_Component), 4214732627U) },
+		{ Z_Construct_UClass_UBomb_Component, UBomb_Component::StaticClass, TEXT("UBomb_Component"), &Z_Registration_Info_UClass_UBomb_Component, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBomb_Component), 1429345225U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Bomb_Component_h_2994766132(TEXT("/Script/BombermanMechanics"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Bomb_Component_h_629874531(TEXT("/Script/BombermanMechanics"),
 		Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Bomb_Component_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BombermanMechanics_Source_BombermanMechanics_Bomb_Component_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

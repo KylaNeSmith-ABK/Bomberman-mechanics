@@ -20,10 +20,15 @@ void UDestructible_Component::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (Owner_)
+	if (!Owner_)
+	{
+		Owner_ = GetOwner();
+	}
+
+	/*if (Owner_)
 	{
 		StartLocation_ = Owner_->GetActorLocation();
-	}
+	}*/
 	
 	// ...
 	
@@ -44,7 +49,7 @@ void UDestructible_Component::TickComponent(float DeltaTime, ELevelTick TickType
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	
-	CurrentTime_ += DeltaTime;
+	/*CurrentTime_ += DeltaTime;
 
 	if (Owner_)
 	{
@@ -52,7 +57,7 @@ void UDestructible_Component::TickComponent(float DeltaTime, ELevelTick TickType
 		FVector currentLocation = Owner_->GetActorLocation();
 		FVector nextLocation = FMath::Lerp(StartLocation_, StartLocation_ + EndLocationOffset_, timeRatio);
 		Owner_->SetActorLocation(nextLocation);
-	}
+	}*/
 	
 
 	// ...

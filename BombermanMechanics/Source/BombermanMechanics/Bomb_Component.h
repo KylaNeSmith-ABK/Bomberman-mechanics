@@ -25,8 +25,8 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere)
-	float ExplosionRadius_ = 250.0f;
+	/*UPROPERTY(EditAnywhere)
+	float ExplosionRadius_ = 250.0f;*/
 
 	UPROPERTY(EditAnywhere)
 	USphereComponent* ExplosionAOESphere_ = nullptr;

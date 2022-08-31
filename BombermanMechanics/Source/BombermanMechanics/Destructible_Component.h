@@ -23,7 +23,8 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	FVector StartLocation_ = FVector::ZeroVector;
+	// -- FOR TESTING --
+	/*FVector StartLocation_ = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere)
 	FVector EndLocationOffset_ = FVector::ZeroVector;
@@ -31,12 +32,12 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float TimeToMove_ = 2.0f;
 
-	float CurrentTime_ = 0.0f;
+	float CurrentTime_ = 0.0f;*/
 
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void DestroyViaBomb();
 };

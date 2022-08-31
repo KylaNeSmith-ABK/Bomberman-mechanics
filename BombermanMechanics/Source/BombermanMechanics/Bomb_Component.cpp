@@ -16,7 +16,7 @@ UBomb_Component::UBomb_Component()
 
 	Owner_ = GetOwner();
 
-	if (Owner_)
+	/*if (Owner_)
 	{
 		USceneComponent* root = Owner_->GetRootComponent();
 
@@ -26,7 +26,7 @@ UBomb_Component::UBomb_Component()
 			ExplosionAOESphere_->InitSphereRadius(ExplosionRadius_);
 			ExplosionAOESphere_->SetupAttachment(root);
 		}
-	}
+	}*/
 
 	// ...
 }
@@ -36,6 +36,11 @@ UBomb_Component::UBomb_Component()
 void UBomb_Component::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if (!Owner_)
+	{
+		Owner_ = GetOwner();
+	}
 
 	if (Owner_)
 	{

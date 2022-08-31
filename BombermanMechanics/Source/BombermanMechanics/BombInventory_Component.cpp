@@ -27,11 +27,6 @@ void UBombInventory_Component::BeginPlay()
 	
 }
 
-
-void UBombInventory_Component::DropBomb()
-{
-}
-
 // Called every frame
 void UBombInventory_Component::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
