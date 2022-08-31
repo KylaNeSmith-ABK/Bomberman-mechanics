@@ -29,9 +29,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 	bool bHasBomb_ = false;
 
-	UFUNCTION()
-	void DropBomb();
-
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
